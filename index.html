@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="upper_img"><img src="./images/logo.svg" /></div>
+      <div class="upper_content">
+        <div class="upper_content_up">
+          <form class="form_bill">
+            <p class="hidden_b hidden">Can't be zero</p>
+            Bill
+            <label for="bill">
+              <img class="icon_dollar" src="./images/icon-dollar.svg" />
+              <input type="number" id="bill" class="bill_input" min="0" />
+            </label>
+          </form>
+
+          <p class="tips_p">Select Tip %</p>
+          <div class="tips">
+            <div class="tips_holder cinci">5%</div>
+            <div class="tips_holder zece">10%</div>
+            <div class="tips_holder cincisprezece">15%</div>
+            <div class="tips_holder douazecisicinci">25%</div>
+            <div class="tips_holder cincizeci">50%</div>
+            <input
+              class="tips_holder tips_placeholder custom"
+              placeholder="Custom"
+              type="number"
+              min="0"
+            />
+          </div>
+          <form class="form_bill">
+            <p class="hidden_p hidden">Can't be zero</p>
+            Number of People
+            <label for="bill">
+              <img class="icon_dollar" src="./images/icon-person.svg" />
+              <input type="number" min="0" id="bill" class="people_input" />
+            </label>
+          </form>
+        </div>
+        <div class="upper_content_down">
+          <div class="tip_amount">
+            <div class="h3andp">
+              <h2 class="h3_amount">Tip Amount</h2>
+              <h3 class="p_amount">/ person</h3>
+            </div>
+
+            <h1 class="h1_amount amount_person">$0.00</h1>
+          </div>
+
+          <div class="tip_amount total_amount">
+            <div class="h3andp">
+              <h2 class="h3_amount">Total</h2>
+              <h3 class="p_amount">/ person</h3>
+            </div>
+
+            <h1 class="h1_amount amount_total">$0.00</h1>
+          </div>
+          <button class="button">RESET</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

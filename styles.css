@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  height: 100%;
+  background-color: hsl(185, 41%, 84%);
+}
+
+main {
+  background-color: hsl(185, 41%, 84%);
+  height: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.upper_img {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper_content {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.form_bill {
+  display: flex;
+  flex-direction: column;
+  color: hsl(186, 14%, 43%);
+  position: relative;
+}
+
+.hidden_p {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  color: red;
+}
+
+.hidden_b {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+#bill {
+  width: 100%;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  font-family: "Space Mono", monospace;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.icon_dollar {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+.tips_p {
+  color: hsl(186, 14%, 43%);
+}
+
+.upper_content_down {
+  background-color: hsl(183, 100%, 15%);
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.tips_holder {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  color: hsl(185, 41%, 84%);
+  cursor: pointer;
+  outline: none;
+}
+
+.tips_placeholder {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+  font-family: "Space Mono", monospace;
+}
+
+.tip_amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h3_amount {
+  color: hsl(0, 0%, 100%);
+}
+
+.p_amount {
+  color: hsl(184, 14%, 56%);
+}
+
+.h1_amount {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+}
+
+.button {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: hsl(172, 67%, 45%);
+  outline: none;
+  font-family: "Space Mono", monospace;
+  border: none;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.color {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+@media only screen and (min-width: 800px) {
+  .upper_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  main {
+    padding: 2rem 8rem 0 8rem;
+  }
+
+  .upper_content_down {
+    min-width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .upper_content_down {
+    min-width: 350px;
+  }
+}
